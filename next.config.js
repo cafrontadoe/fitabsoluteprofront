@@ -11,6 +11,9 @@ module.exports = withStoreConfig({
   features: store.features,
   reactStrictMode: true,
   images: {
+    domains: [
+      "fitabsolute-server.s3.us-east-1.amazonaws.com",
+    ],
     remotePatterns: [
       {
         protocol: "http",
