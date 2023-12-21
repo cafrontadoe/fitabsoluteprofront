@@ -12,7 +12,7 @@ module.exports = withStoreConfig({
   reactStrictMode: true,
   images: {
     domains: [
-      "fitabsolute-server.s3.us-east-1.amazonaws.com",
+      "fitabsolute-server.s3.amazonaws.com",
     ],
     remotePatterns: [
       {
