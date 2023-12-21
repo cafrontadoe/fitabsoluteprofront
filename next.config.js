@@ -14,6 +14,14 @@ module.exports = withStoreConfig({
     domains: [
       "fitabsolute-server.s3.us-east-1.amazonaws.com",
     ],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "fitabsolute-server.s3.us-east-1.amazonaws.com",
+        port: '',
+        pathname: '/**',
+      },
+    ],
   },
 })
 
