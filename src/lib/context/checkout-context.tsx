@@ -318,12 +318,14 @@ export const CheckoutProvider = ({ children }: CheckoutProviderProps) => {
   const isCompleting = useToggleState()
 
   /**
+   * 
    * Method to complete the checkout process. This is called when the user clicks the "Complete Checkout" button.
    */
   const onPaymentCompleted = () => {
     isCompleting.open()
     complete(undefined, {
       onSuccess: ({ data }) => {
+
         push(`/order/confirmed/${data.id}`)
         resetCart()
       },
