@@ -28,7 +28,6 @@ const ImageGallery = ({ images }: ImageGalleryProps) => {
                   objectFit: "cover",
                 }}
               />
-              {image.url}
             </Container>
           )
         })}
