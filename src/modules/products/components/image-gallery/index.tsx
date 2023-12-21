@@ -6,6 +6,10 @@ type ImageGalleryProps = {
   images: MedusaImage[]
 }
 
+const loaderProp =({ src }: any) => {
+  return src;
+}
+
 const ImageGallery = ({ images }: ImageGalleryProps) => {
   return (
     <div className="flex items-start relative">
@@ -27,6 +31,7 @@ const ImageGallery = ({ images }: ImageGalleryProps) => {
                 style={{
                   objectFit: "cover",
                 }}
+                loader={loaderProp(image.url)}
               />
             </Container>
           )
