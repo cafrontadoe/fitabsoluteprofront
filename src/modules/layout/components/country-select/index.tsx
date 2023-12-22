@@ -57,7 +57,7 @@ const CountrySelect = ({ toggleState }: CountrySelectProps) => {
         defaultValue={
           countryCode
             ? options?.find((o) => o.country === countryCode)
-            : undefined
+            : (options && options?.length > 0 ? options[0]: undefined)
         }
       >
         <Listbox.Button className="py-1 w-full">
