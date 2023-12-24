@@ -109,4 +109,11 @@
   .text-3xl-semi {
     @apply text-[32px] leading-[44px] font-semibold;
   }
+
+  .navbar-item.active {
+    background-color: #ff5722; /* Orange */
+    padding: 0.5rem;
+    border-radius: 50%;
+    color: #fff;
+  }
 }

@@ -59,15 +59,15 @@ const ProductActionsInner: React.FC<ProductActionsProps> = ({ product }) => {
           </span>
           {selectedPrice.price_type === "sale" && (
             <>
-              <p>
+              {/* <p>
                 <span className="text-ui-fg-subtle">Original: </span>
                 <span className="line-through">
                   {selectedPrice.original_price}
                 </span>
-              </p>
-              <span className="text-ui-fg-interactive">
+              </p> */}
+              {/* <span className="text-ui-fg-interactive">
                 -{selectedPrice.percentage_diff}%
-              </span>
+              </span> */}
             </>
           )}
         </div>
