@@ -29,7 +29,7 @@ const CartDropdown = () => {
               ) : (
                 <></>
               )}
-              <CiShoppingCart className="text-3xl" />
+              <CiShoppingCart className="text-3xl color-orange-fit" />
             </div>
           </Link>
         </Popover.Button>

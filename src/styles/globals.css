@@ -151,3 +151,12 @@
     font-weight: bold;
   }
 }
+
+.color-orange-fit {
+  color: #ff5722;
+}
+
+
+.bg-current {
+  background-color: #ff5722;
+}
