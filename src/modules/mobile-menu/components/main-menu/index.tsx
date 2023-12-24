@@ -25,7 +25,7 @@ const MainMenu = () => {
 
   return (
     <div className="flex flex-col flex-1">
-      <div className="flex items-center justify-between w-full border-b border-gray-200 p-6">
+      <div className="flex items-center justify-between w-full border-b border-gray-200 p-6 bg-black">
         <div className="flex-1 basis-0">
           <button
             className="flex items-center gap-x-2"
