@@ -28,7 +28,7 @@ const CheckoutTemplate = () => {
             </Link>
             <Link
               href="/"
-              className="txt-compact-xlarge-plus text-ui-fg-subtle hover:text-ui-fg-base uppercase"
+              className="txt-compact-xlarge-plus text-ui-fg-subtle hover:text-ui-fg-base uppercase color-orange-fit"
             >
               Fit Absolute Pro
             </Link>

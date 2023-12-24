@@ -36,7 +36,7 @@ const MainMenu = () => {
           </button>
         </div>
 
-        <Heading className="txt-compact-xlarge-plus text-ui-fg-subtle uppercase">
+        <Heading className="txt-compact-xlarge-plus text-ui-fg-subtle uppercase color-orange-fit">
           Fit Absolute Pro
         </Heading>
 
