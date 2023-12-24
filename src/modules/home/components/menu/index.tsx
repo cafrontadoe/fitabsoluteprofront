@@ -1,13 +1,5 @@
 "use client"
 
-import { Button, Heading } from "@medusajs/ui"
-import InteractiveLink from "@modules/common/components/interactive-link"
-import { Github } from "@medusajs/icons"
-// import {
-//   bgWhite,
-//   textBlack,
-//   linkRed,
-// } from "tailwindcss/colors";
 import Link from "next/link"
 import { useProductCategories } from "medusa-react"
 import { useRouter, usePathname } from 'next/navigation'

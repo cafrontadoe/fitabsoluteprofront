@@ -10,6 +10,7 @@ import Thumbnail from "@modules/products/components/thumbnail"
 import { formatAmount, useCart } from "medusa-react"
 import Link from "next/link"
 import { Fragment } from "react"
+import { CiShoppingCart } from "react-icons/ci"
 
 const CartDropdown = () => {
   const { cart, totalItems } = useCart()
@@ -21,10 +22,16 @@ const CartDropdown = () => {
     <div className="h-full z-50" onMouseEnter={open} onMouseLeave={close}>
       <Popover className="relative h-full">
         <Popover.Button className="h-full">
-          <Link
-            className="hover:text-ui-fg-base"
-            href="/cart"
-          >{`Cart (${totalItems})`}</Link>
+          <Link className="hover:text-ui-fg-base" href="/cart">
+            <div className="cart">
+              {totalItems && totalItems > 0 ? (
+                <span className="count">{totalItems}</span>
+              ) : (
+                <></>
+              )}
+              <CiShoppingCart className="text-3xl" />
+            </div>
+          </Link>
         </Popover.Button>
         <Transition
           show={state}
