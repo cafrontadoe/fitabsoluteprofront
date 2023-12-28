@@ -10,7 +10,7 @@ export default function PageLayout({
   return (
     <>
       <Nav />
-      <Navbar />
+      {/* <Navbar /> */}
       <div >
       {children}
 
