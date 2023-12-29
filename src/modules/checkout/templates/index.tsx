@@ -9,9 +9,9 @@ import SubmitSpinner from "../components/submit-spinner"
 const CheckoutTemplate = () => {
   return (
     <CheckoutProvider>
-      <div className="bg-white relative small:min-h-screen">
+      <div className="bg-black relative small:min-h-screen">
         <SubmitSpinner />
-        <div className="h-16 bg-white">
+        <div className="h-16 bg-black">
           <nav className="flex items-center h-full justify-between content-container border-b">
             <Link
               href="/cart"

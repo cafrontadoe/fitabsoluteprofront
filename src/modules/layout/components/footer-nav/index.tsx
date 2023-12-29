@@ -4,6 +4,7 @@ import clsx from "clsx"
 import { useCollections, useProductCategories } from "medusa-react"
 import { Text } from "@medusajs/ui"
 import Link from "next/link"
+import { FaEnvelope, FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa"
 
 const FooterNav = () => {
   const { collections } = useCollections()
@@ -101,6 +102,28 @@ const FooterNav = () => {
                 </ul>
               </div>
             )}
+            <div className="flex flex-col gap-y-2">
+              <Link
+                className="hover:text-ui-fg-base txt-small-plus txt-ui-fg-base"
+                href={`/contact`}
+              >
+                Contato
+              </Link>
+              <div className="flex justify-center space-x-4 mb-8">
+        <a href="https://www.instagram.com/fitabsolutepro/" target="_blank" rel="noopener noreferrer">
+          <FaInstagram className="text-3xl text-pink-500 hover:text-pink-700 cursor-pointer" />
+        </a>
+        <a href="https://www.facebook.com/fitabsolute.pro" target="_blank" rel="noopener noreferrer">
+          <FaFacebook className="text-3xl text-blue-500 hover:text-blue-700 cursor-pointer" />
+        </a>
+        <a href="https://wa.me/+351929002531" target="_blank" rel="noopener noreferrer">
+          <FaWhatsapp className="text-3xl text-green-500 hover:text-green-700 cursor-pointer" />
+        </a>
+        <a href="mailto:fitabsolutepro@gmal.com">
+          <FaEnvelope className="text-3xl text-red-500 hover:text-red-700 cursor-pointer" />
+        </a>
+      </div>
+            </div>
           </div>
         </div>
         <div className="flex w-full mb-16 justify-between text-ui-fg-muted">

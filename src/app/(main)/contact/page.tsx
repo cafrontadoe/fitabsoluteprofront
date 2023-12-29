@@ -18,7 +18,7 @@ const ContactPage = () => {
         <a href="https://www.instagram.com/fitabsolutepro/" target="_blank" rel="noopener noreferrer">
           <FaInstagram className="text-3xl text-pink-500 hover:text-pink-700 cursor-pointer" />
         </a>
-        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.facebook.com/fitabsolute.pro" target="_blank" rel="noopener noreferrer">
           <FaFacebook className="text-3xl text-blue-500 hover:text-blue-700 cursor-pointer" />
         </a>
         <a href="https://wa.me/+351929002531" target="_blank" rel="noopener noreferrer">
