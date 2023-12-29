@@ -43,7 +43,7 @@ const SkeletonProductPage = () => {
                 <div className="flex flex-col gap-y-2">
                   <div className="flex flex-col gap-y-4">
                     <div className="bg-gray-100 h-6 w-16"></div>
-                    <div className="grid grid-cols-3 lg:grid-cols-4 gap-2">
+                    <div className="grid grid-cols-3 lg:grid-cols-5 gap-2">
                       {repeat(4).map((v) => {
                         return (
                           <div

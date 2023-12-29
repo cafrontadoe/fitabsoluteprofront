@@ -20,7 +20,7 @@ const DesktopSearchModal = ({
 }: DesktopSearchModalProps) => {
   return (
     <>
-      <button onClick={open} className="color-d4 flex items-center gap-x-2 h-full">
+      <button onClick={open} className="hover:color-white color-d4 flex items-center gap-x-2 h-full">
         Search
       </button>
 

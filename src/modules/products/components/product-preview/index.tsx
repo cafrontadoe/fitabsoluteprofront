@@ -17,7 +17,7 @@ const ProductPreview = ({
     <div>
       <Thumbnail thumbnail={thumbnail} size="full" isFeatured={isFeatured} />
       {/* Ícono de React en la esquina inferior izquierda */}
-      <div className="flex txt-compact-medium mt-4 justify-between">
+      <div className="grid txt-compact-medium mt-4 justify-between">
         <Text className="text-ui-fg-subtle">{title}</Text>
         <div className="flex items-center gap-x-2">
           {price ? (

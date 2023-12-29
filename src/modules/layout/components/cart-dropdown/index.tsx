@@ -22,7 +22,7 @@ const CartDropdown = () => {
     <div className="h-full z-50" onMouseEnter={open} onMouseLeave={close}>
       <Popover className="relative h-full">
         <Popover.Button className="h-full color-d4">
-          <Link className="hover:text-ui-fg-base" href="/cart">
+          <Link className="hover:color-white" href="/cart">
             <div className="cart">
               {totalItems && totalItems > 0 ? (
                 <span className="count">{totalItems}</span>

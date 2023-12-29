@@ -49,7 +49,7 @@ const Nav = () => {
                   open={searchModalOpen}
                 />
               )}
-              <Link className="hover:text-ui-fg-base color-d4" href="/account">
+              <Link className="color-d4" href="/account">
                 Account
               </Link>
             </div>
