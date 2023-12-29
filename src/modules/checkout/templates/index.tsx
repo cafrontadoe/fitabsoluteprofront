@@ -11,7 +11,7 @@ const CheckoutTemplate = () => {
     <CheckoutProvider>
       <div className="bg-black relative small:min-h-screen">
         <SubmitSpinner />
-        <div className="h-16 bg-black">
+        <div className="h-16">
           <nav className="flex items-center h-full justify-between content-container border-b">
             <Link
               href="/cart"
