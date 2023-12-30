@@ -49,9 +49,9 @@ const Nav = () => {
                   open={searchModalOpen}
                 />
               )}
-              <Link className="color-d4" href="/account">
+              {/* <Link className="color-d4" href="/account">
                 Account
-              </Link>
+              </Link> */}
             </div>
             <CartDropdown />
           </div>
