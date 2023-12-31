@@ -9,80 +9,80 @@ const BillingAddress = () => {
       {({ register, formState: { errors, touchedFields } }) => (
         <div className="grid grid-cols-2 gap-4">
           <Input
-            label="First name"
+            label="Nome"
             {...register("billing_address.first_name", {
-              required: "First name is required",
+              required: "Nome é necessário",
             })}
-            autoComplete="given-name"
+            autoComplete="nome-dado"
             errors={errors}
             touched={touchedFields}
             required
           />
           <Input
-            label="Last name"
+            label="Apelido"
             {...register("billing_address.last_name", {
-              required: "Last name is required",
+              required: "Apelido é necessário",
             })}
-            autoComplete="family-name"
+            autoComplete="apelido"
             errors={errors}
             touched={touchedFields}
             required
           />
           <Input
-            label="Address"
+            label="Endereço"
             {...register("billing_address.address_1", {
-              required: "Address is required",
+              required: "Endereço é necessário",
             })}
-            autoComplete="address-line1"
+            autoComplete="endereço-linha1"
             errors={errors}
             touched={touchedFields}
             required
           />
           <Input
-            label="Company"
+            label="Empresa"
             {...register("billing_address.company")}
-            autoComplete="organization"
+            autoComplete="empresa"
             errors={errors}
             touched={touchedFields}
           />
           <Input
-            label="Postal code"
+            label="Código postal"
             {...register("billing_address.postal_code", {
-              required: "Postal code is required",
+              required: "Código postal é necessário",
             })}
-            autoComplete="postal-code"
+            autoComplete="codigo-postal"
             errors={errors}
             touched={touchedFields}
             required
           />
           <Input
-            label="City"
+            label="Cidade"
             {...register("billing_address.city", {
-              required: "City is required",
+              required: "Cidade é necessário",
             })}
-            autoComplete="address-level2"
+            autoComplete="endereço-linha2"
             errors={errors}
             touched={touchedFields}
             required
           />
           <CountrySelect
             {...register("billing_address.country_code", {
-              required: "Country is required",
+              required: "País é necessário",
             })}
-            autoComplete="country"
+            autoComplete="País"
             errors={errors}
             touched={touchedFields}
             required
           />
           <Input
-            label="State / Province"
+            label="Estado / Província"
             {...register("billing_address.province")}
             autoComplete="address-level1"
             errors={errors}
             touched={touchedFields}
           />
           <Input
-            label="Phone"
+            label="Telefone"
             {...register("billing_address.phone")}
             autoComplete="tel"
             errors={errors}

@@ -6,7 +6,7 @@ const ContactPage = () => {
   return (
     <div className="container mx-auto p-8">
       <Head>
-        <title>Contacto</title>
+        <title>Contato</title>
       </Head>
 
       <div className="text-center mb-8">

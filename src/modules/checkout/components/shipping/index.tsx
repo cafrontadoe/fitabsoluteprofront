@@ -77,7 +77,7 @@ const Shipping: React.FC<ShippingProps> = ({ cart }) => {
             {
               type: "validate",
               message:
-                "An error occurred while adding shipping. Please try again.",
+                "Ocorreu um erro ao adicionar o frete. Por favor, tente novamente.",
             },
             { shouldFocus: true }
           ),
@@ -126,7 +126,7 @@ const Shipping: React.FC<ShippingProps> = ({ cart }) => {
             }
           )}
         >
-          Delivery
+          Entrega
           {!isOpen && currentShippingOption && shippingReady && (
             <CheckCircleSolid />
           )}
@@ -196,7 +196,7 @@ const Shipping: React.FC<ShippingProps> = ({ cart }) => {
             className="mt-6"
             onClick={() => submitShippingOption(shippingOptionId)}
           >
-            Continue to payment
+            Continuar para o pagamento
           </Button>
         </div>
       ) : (
@@ -205,7 +205,7 @@ const Shipping: React.FC<ShippingProps> = ({ cart }) => {
             {cart && shippingReady && (
               <div className="flex flex-col w-1/3">
                 <Text className="txt-medium-plus text-ui-fg-base mb-1">
-                  Method
+                  Método
                 </Text>
                 <Text className="txt-medium text-ui-fg-subtle">
                   {cart.shipping_methods[0].shipping_option.name} (

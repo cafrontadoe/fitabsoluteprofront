@@ -26,7 +26,7 @@ const FooterNav = () => {
             {product_categories && (
               <div className="flex flex-col gap-y-2">
                 <span className="txt-small-plus txt-ui-fg-base">
-                  Categories
+                  Categorias
                 </span>
                 <ul className="grid grid-cols-1 gap-2">
                   {product_categories?.slice(0, 6).map((c) => {
@@ -79,7 +79,7 @@ const FooterNav = () => {
             {collections && (
               <div className="flex flex-col gap-y-2">
                 <span className="txt-small-plus txt-ui-fg-base">
-                  Collections
+                  Coleções
                 </span>
                 <ul
                   className={clsx(

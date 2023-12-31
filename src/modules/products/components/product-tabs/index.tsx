@@ -20,7 +20,7 @@ const ProductTabs = ({ product }: ProductTabsProps) => {
       //   component: <ProductInfoTab product={product} />,
       // },
       {
-        label: "Shipping & Returns",
+        label: "Envio",
         component: <ShippingInfoTab />,
       },
     ]
@@ -93,14 +93,14 @@ const ShippingInfoTab = () => {
         <div className="flex items-start gap-x-2">
           <FastDelivery />
           <div>
-            <span className="font-semibold">Fast delivery</span>
+            <span className="font-semibold">Entrega rápida</span>
             <p className="max-w-sm">
-              Your package will arrive in 3-5 business days at your pick up
-              location or in the comfort of your home.
+              Seu pacote chegará em 3 a 5 dias úteis na sua retirada
+               local ou no conforto da sua casa.
             </p>
           </div>
         </div>
-        <div className="flex items-start gap-x-2">
+        {/* <div className="flex items-start gap-x-2">
           <Refresh />
           <div>
             <span className="font-semibold">Simple exchanges</span>
@@ -120,7 +120,7 @@ const ShippingInfoTab = () => {
               is hassle-free.
             </p>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   )

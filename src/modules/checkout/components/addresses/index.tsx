@@ -30,13 +30,13 @@ const Addresses = () => {
           level="h2"
           className="flex flex-row text-3xl-regular gap-x-2 items-baseline"
         >
-          Address
+          Endereço
           {!isOpen && <CheckCircleSolid />}
         </Heading>
         {!isOpen && (
           <Text>
             <button onClick={handleEdit} className="text-ui-fg-interactive">
-              Edit
+              Editar
             </button>
           </Text>
         )}
@@ -51,7 +51,7 @@ const Addresses = () => {
                 level="h2"
                 className="text-3xl-regular gap-x-4 pb-6 pt-8"
               >
-                Billing address
+                Endereço de Cobrança
               </Heading>
 
               <BillingAddress />
@@ -63,7 +63,7 @@ const Addresses = () => {
             className="mt-6"
             onClick={handleSubmit(setAddresses)}
           >
-            Continue to delivery
+            Continuar para entrega
           </Button>
         </div>
       ) : (
@@ -74,7 +74,7 @@ const Addresses = () => {
                 <div className="flex items-start gap-x-1 w-full">
                   <div className="flex flex-col w-1/3">
                     <Text className="txt-medium-plus text-ui-fg-base mb-1">
-                      Shipping Address
+                      Endereço para envio
                     </Text>
                     <Text className="txt-medium text-ui-fg-subtle">
                       {cart.shipping_address.first_name}{" "}
@@ -95,7 +95,7 @@ const Addresses = () => {
 
                   <div className="flex flex-col w-1/3 ">
                     <Text className="txt-medium-plus text-ui-fg-base mb-1">
-                      Contact
+                      Contato
                     </Text>
                     <Text className="txt-medium text-ui-fg-subtle">
                       {cart.shipping_address.phone}
@@ -107,12 +107,12 @@ const Addresses = () => {
 
                   <div className="flex flex-col w-1/3">
                     <Text className="txt-medium-plus text-ui-fg-base mb-1">
-                      Billing Address
+                      Endereço de Cobrança
                     </Text>
 
                     {checked ? (
                       <Text className="txt-medium text-ui-fg-subtle">
-                        Billing- and delivery address are the same.
+                        Os endereços de cobrança e entrega são os mesmos.
                       </Text>
                     ) : (
                       <>

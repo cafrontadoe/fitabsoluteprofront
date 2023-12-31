@@ -2,16 +2,35 @@
 
 import { useMobileMenu } from "@lib/context/mobile-menu-context"
 import useToggleState from "@lib/hooks/use-toggle-state"
+import CountrySelect from "@modules/checkout/components/country-select"
 import Hamburger from "@modules/common/components/hamburger"
 import CartDropdown from "@modules/layout/components/cart-dropdown"
 import DropdownMenu from "@modules/layout/components/dropdown-menu"
 import SideMenu from "@modules/layout/components/side-menu"
 import MobileMenu from "@modules/mobile-menu/templates"
 import DesktopSearchModal from "@modules/search/templates/desktop-search-modal"
+import { useRegions } from "medusa-react"
 import Link from "next/link"
+import { useMemo } from "react"
+import ReactCountryFlag from "react-country-flag"
 
 const Nav = () => {
   const { toggle } = useMobileMenu()
+  const { regions } = useRegions()
+
+  const countryOptions = useMemo(() => {
+    const currentRegion = regions?.find((r) => r)
+
+    if (!regions) {
+      return []
+    }
+
+    return currentRegion?.countries.map((country) => ({
+      value: country.iso_2,
+      label: country.display_name,
+    }))
+  }, [regions])
+
   const {
     state: searchModalState,
     close: searchModalClose,
@@ -41,6 +60,13 @@ const Nav = () => {
           </div>
 
           <div className="flex items-center gap-x-6 h-full flex-1 basis-0 justify-end">
+          <div className="mr-2">
+              {countryOptions?.map((country, index) => (
+                <div key={index}>
+                  <ReactCountryFlag countryCode={country.value} svg />
+                </div>
+              ))}
+            </div>
             <div className="hidden small:flex items-center gap-x-6 h-full">
               {process.env.FEATURE_SEARCH_ENABLED && (
                 <DesktopSearchModal
@@ -49,9 +75,9 @@ const Nav = () => {
                   open={searchModalOpen}
                 />
               )}
-              <Link className="color-d4" href="/account">
+              {/* <Link className="color-d4" href="/account">
                 Account
-              </Link>
+              </Link> */}
             </div>
             <CartDropdown />
           </div>

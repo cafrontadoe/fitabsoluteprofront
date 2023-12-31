@@ -55,7 +55,7 @@ const MainMenu = () => {
           >
             <MagnifyingGlassMini />
             <span placeholder="Search products" className="text-base-regular">
-              Search products
+              Procurar produtos
             </span>
           </button>
         )}
@@ -102,7 +102,7 @@ const MainMenu = () => {
 
         <div className="flex flex-col">
           <div className="flex flex-col gap-y-8 text-small-regular">
-            {!customer ? (
+            {/* {!customer ? (
               <div className="flex flex-col gap-y-4 ">
                 <span className="text-gray-700 uppercase">Account</span>
                 <Link href={`/account/login`} passHref>
@@ -130,7 +130,7 @@ const MainMenu = () => {
                   </button>
                 </Link>
               </div>
-            )}
+            )} */}
             <div className="flex flex-col gap-y-4">
               <span className="text-gray-700 uppercase">Delivery</span>
               <button

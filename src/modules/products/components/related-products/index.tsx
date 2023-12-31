@@ -57,14 +57,14 @@ const RelatedProducts = ({ product }: RelatedProductsProps) => {
     <div className="product-page-constraint">
       <div className="flex flex-col items-center text-center mb-16">
         <span className="text-base-regular text-gray-600 mb-6">
-          Related products
+          Produtos relacionados
         </span>
         <p className="text-2xl-regular text-gray-900 max-w-lg">
-          You might also want to check out these products.
+          Você também pode querer olhar esses produtos.
         </p>
       </div>
 
-      <ul className="grid grid-cols-2 small:grid-cols-3 medium:grid-cols-5 gap-x-6 gap-y-8">
+      <ul className="grid grid-cols-2 small:grid-cols-4 medium:grid-cols-5 gap-x-6 gap-y-8">
         {previews.map((p) => (
           <li key={p.id}>
             <ProductPreview {...p} />
@@ -91,7 +91,7 @@ const RelatedProducts = ({ product }: RelatedProductsProps) => {
             onClick={() => fetchNextPage()}
             className="w-72"
           >
-            Load more
+            Carregue mais
           </Button>
         </div>
       )}

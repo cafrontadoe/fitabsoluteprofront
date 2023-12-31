@@ -127,7 +127,7 @@ const StripePaymentButton = ({
         size="large"
         isLoading={submitting}
       >
-        Place order
+        Faça a encomenda
       </Button>
       {errorMessage && (
         <div className="text-red-500 text-small-regular mt-2">
@@ -163,13 +163,13 @@ const PayPalPaymentButton = ({
       ?.authorize()
       .then((authorization) => {
         if (authorization.status !== "COMPLETED") {
-          setErrorMessage(`An error occurred, status: ${authorization.status}`)
+          setErrorMessage(`Ocorreu um erro, status: ${authorization.status}`)
           return
         }
         onPaymentCompleted()
       })
       .catch(() => {
-        setErrorMessage(`An unknown error occurred, please try again.`)
+        setErrorMessage(`Ocorreu um erro desconhecido, tente novamente.`)
       })
       .finally(() => {
         setSubmitting(false)
@@ -216,7 +216,7 @@ const ManualTestPaymentButton = ({ notReady }: { notReady: boolean }) => {
       onClick={handlePayment}
       size="large"
     >
-      Place order
+      Faça a encomenda
     </Button>
   )
 }
