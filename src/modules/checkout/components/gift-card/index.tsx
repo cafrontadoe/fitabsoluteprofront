@@ -46,7 +46,7 @@ const GiftCard: React.FC<GiftCardProps> = ({ cart }) => {
           setError(
             "gift_card_code",
             {
-              message: "Code is invalid",
+              message: "O código é inválido",
             },
             {
               shouldFocus: true,

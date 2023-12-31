@@ -26,7 +26,7 @@ const CartTemplate = () => {
             <div className="flex flex-col bg-white p-6 gap-y-6">
               {!customer && (
                 <>
-                  <SignInPrompt />
+                  {/* <SignInPrompt /> */}
                   <Divider />
                 </>
               )}

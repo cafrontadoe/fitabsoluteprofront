@@ -21,7 +21,7 @@ const DesktopSearchModal = ({
   return (
     <>
       <button onClick={open} className="hover:color-white color-d4 flex items-center gap-x-2 h-full">
-        Search
+        Procurar
       </button>
 
       <Modal isOpen={state} close={close} size="large" search>

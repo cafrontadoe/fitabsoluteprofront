@@ -109,7 +109,7 @@ const Payment = () => {
               {
                 type: "validate",
                 message:
-                  "An error occurred while selecting this payment method. Please try again.",
+                  "Ocorreu um erro ao selecionar esta forma de pagamento. Por favor, tente novamente.",
               },
               { shouldFocus: true }
             ),

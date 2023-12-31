@@ -23,7 +23,7 @@ const AccountInfo = ({
   isSuccess,
   isError,
   clearState,
-  errorMessage = "An error occurred, please try again",
+  errorMessage = "Ocorreu um erro. Por favor, tente novamente",
   children,
 }: AccountInfoProps) => {
   const { state, close, toggle } = useToggleState()
@@ -77,7 +77,7 @@ const AccountInfo = ({
           )}
         >
           <Badge className="p-2 my-4" color="green">
-            <span>{label} updated succesfully</span>
+            <span>{label} Atualizado com sucesso</span>
           </Badge>
         </Disclosure.Panel>
       </Disclosure>
@@ -119,7 +119,7 @@ const AccountInfo = ({
                 className="w-full small:max-w-[140px]"
                 type="submit"
               >
-                Save changes
+                Salvar alterações
               </Button>
             </div>
           </div>

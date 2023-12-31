@@ -63,7 +63,7 @@ const AddressSelect = ({ addresses }: AddressSelectProps) => {
               <span className="block truncate">
                 {selectedAddress
                   ? selectedAddress.address_1
-                  : "Choose an address"}
+                  : "Escolha um endereço"}
               </span>
               <ChevronUpDown
                 className={clsx("transition-rotate duration-200", {

@@ -20,9 +20,9 @@ const CheckoutTemplate = () => {
               <>
                 <ChevronDown className="rotate-90" size={16} />
                 <span className="mt-px hidden small:block txt-compact-plus text-ui-fg-subtle hover:text-ui-fg-base uppercase">
-                  Back to shopping cart
+                  Voltar ao carrinho de compras
                 </span>
-                <span className="mt-px block small:hidden">Back</span>
+                <span className="mt-px block small:hidden">Voltar</span>
               </>
             </Link>
             <Link

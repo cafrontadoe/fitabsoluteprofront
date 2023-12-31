@@ -55,7 +55,7 @@ const MainMenu = () => {
           >
             <MagnifyingGlassMini />
             <span placeholder="Search products" className="text-base-regular">
-              Search products
+              Procurar produtos
             </span>
           </button>
         )}

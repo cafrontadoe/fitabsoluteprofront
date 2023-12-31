@@ -85,7 +85,7 @@ const EditAddress: React.FC<EditAddressProps> = ({
       })
       .catch(() => {
         setSubmitting(false)
-        setError("Failed to update address, please try again.")
+        setError("Falha ao atualizar o endereço. Tente novamente.")
       })
   })
 
@@ -134,95 +134,95 @@ const EditAddress: React.FC<EditAddressProps> = ({
             onClick={open}
           >
             <Edit />
-            Edit
+            Editar
           </button>
           <button
             className="text-small-regular text-gray-700 flex items-center gap-x-2"
             onClick={removeAddress}
           >
             <Trash />
-            Remove
+            Remover
           </button>
         </div>
       </div>
 
       <Modal isOpen={state} close={close}>
         <Modal.Title>
-          <Heading className="mb-2">Edit address</Heading>
+          <Heading className="mb-2">Editar Endereço</Heading>
         </Modal.Title>
         <Modal.Body>
           <div className="grid grid-cols-1 gap-y-2">
             <div className="grid grid-cols-2 gap-x-2">
               <Input
-                label="First name"
+                label="Nome"
                 {...register("first_name", {
                   required: "First name is required",
                 })}
                 required
                 errors={errors}
-                autoComplete="given-name"
+                autoComplete="nome"
               />
               <Input
-                label="Last name"
+                label="Apelido"
                 {...register("last_name", {
                   required: "Last name is required",
                 })}
                 required
                 errors={errors}
-                autoComplete="family-name"
+                autoComplete="apelido"
               />
             </div>
-            <Input label="Company" {...register("company")} errors={errors} />
+            <Input label="Empresa" {...register("company")} errors={errors} />
             <Input
-              label="Address"
+              label="Endereço"
               {...register("address_1", {
-                required: "Address is required",
+                required: "Endereço é necessário",
               })}
               required
               errors={errors}
-              autoComplete="address-line1"
+              autoComplete="endereço"
             />
             <Input
-              label="Apartment, suite, etc."
+              label="Apartamento, suíte, etc"
               {...register("address_2")}
               errors={errors}
-              autoComplete="address-line2"
+              autoComplete="Apartamento-suíte"
             />
             <div className="grid grid-cols-[144px_1fr] gap-x-2">
               <Input
-                label="Postal code"
+                label="Código postal"
                 {...register("postal_code", {
-                  required: "Postal code is required",
+                  required: "Código postal é necessário",
                 })}
                 required
                 errors={errors}
-                autoComplete="postal-code"
+                autoComplete="codigo-postal"
               />
               <Input
-                label="City"
+                label="Cidade"
                 {...register("city", {
-                  required: "City is required",
+                  required: "Cidade é necessário",
                 })}
                 errors={errors}
                 required
-                autoComplete="locality"
+                autoComplete="cidade"
               />
             </div>
             <Input
-              label="Province / State"
+              label="Província / Estado"
               {...register("province")}
               errors={errors}
-              autoComplete="address-level1"
+              autoComplete="nível-endereço1"
             />
             <CountrySelect
               {...register("country_code", { required: true })}
-              autoComplete="country"
+              autoComplete="país"
             />
             <Input
-              label="Phone"
+              label="Telefone"
               {...register("phone")}
               errors={errors}
-              autoComplete="phone"
+              autoComplete="telefone"
             />
           </div>
           {error && (
@@ -232,10 +232,10 @@ const EditAddress: React.FC<EditAddressProps> = ({
         <Modal.Footer>
           <div className="flex gap-3 mt-4">
             <Button variant="secondary" onClick={close} disabled={submitting}>
-              Cancel
+              Cancelar
             </Button>
             <Button className="min-h-0" onClick={submit} isLoading={submitting}>
-              Save
+              Salvar
             </Button>
           </div>
         </Modal.Footer>

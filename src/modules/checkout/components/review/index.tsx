@@ -29,7 +29,7 @@ const Review = () => {
             }
           )}
         >
-          Review
+          Revisar
         </Heading>
       </div>
       {!editingOtherSteps && previousStepsCompleted && (
@@ -37,10 +37,10 @@ const Review = () => {
           <div className="flex items-start gap-x-1 w-full mb-6">
             <div className="w-full">
               <Text className="txt-medium-plus text-ui-fg-base mb-1">
-                By clicking the Place Order button, you confirm that you have
-                read, understand and accept our Terms of Use, Terms of Sale and
-                Returns Policy and acknowledge that you have read Medusa
-                Store&apos;s Privacy Policy.
+                Ao clicar no botão Fazer pedido, você confirma que possui
+                leia, entenda e aceite nossos Termos de Uso, Termos de Venda e
+                Política de Devoluções e reconhece que você leu Fit Absolute Pro &apos;s 
+                Política de Privacidade da Loja.
               </Text>
             </div>
           </div>

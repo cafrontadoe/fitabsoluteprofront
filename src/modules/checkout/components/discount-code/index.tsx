@@ -126,7 +126,7 @@ const DiscountCode: React.FC<DiscountCodeProps> = ({ cart }) => {
       <div className="txt-medium">
         {gift_cards.length > 0 && (
           <div className="flex flex-col mb-4">
-            <Heading className="txt-medium">Gift card(s) applied:</Heading>
+            <Heading className="txt-medium">Vales-presente aplicados:</Heading>
             {gift_cards?.map((gc) => (
               <div
                 className="flex items-center justify-between txt-small-plus"
@@ -145,7 +145,7 @@ const DiscountCode: React.FC<DiscountCodeProps> = ({ cart }) => {
                   disabled={isLoading}
                 >
                   <Trash size={14} />
-                  <span className="sr-only">Remove gift card from order</span>
+                  <span className="sr-only">Remover cartão-presente do pedido</span>
                 </button>
               </div>
             ))}
@@ -155,7 +155,7 @@ const DiscountCode: React.FC<DiscountCodeProps> = ({ cart }) => {
         {appliedDiscount ? (
           <div className="w-full flex items-center">
             <div className="flex flex-col w-full">
-              <Heading className="txt-medium">Discount applied:</Heading>
+              <Heading className="txt-medium">Desconto aplicado:</Heading>
               <div className="flex items-center justify-between w-full max-w-full">
                 <Text className="flex gap-x-1 items-baseline txt-small-plus w-4/5 pr-1">
                   <span>Code:</span>
@@ -169,7 +169,7 @@ const DiscountCode: React.FC<DiscountCodeProps> = ({ cart }) => {
                 >
                   <Trash size={14} />
                   <span className="sr-only">
-                    Remove discount code from order
+                    Remover código de desconto do pedido
                   </span>
                 </button>
               </div>
@@ -178,16 +178,16 @@ const DiscountCode: React.FC<DiscountCodeProps> = ({ cart }) => {
         ) : (
           <form onSubmit={handleSubmit(onApply)} className="w-full">
             <Label className="flex gap-x-1 mb-2">
-              Gift card or discount code?
-              <Tooltip content="You can add multiple gift cards, but only one discount code.">
+              Vale-presente ou código de desconto?
+              <Tooltip content="Você pode adicionar vários cartões-presente, mas apenas um código de desconto.">
                 <InformationCircleSolid color="var(--fg-muted)" />
               </Tooltip>
             </Label>
             <div className="flex w-full gap-x-2 items-center">
               <Input
-                label="Please enter code"
+                label="Por favor insira o código"
                 {...register("discount_code", {
-                  required: "Code is required",
+                  required: "O código é obrigatório",
                 })}
                 errors={errors}
               />
@@ -198,7 +198,7 @@ const DiscountCode: React.FC<DiscountCodeProps> = ({ cart }) => {
                 className="!min-h-[0] h-10"
                 isLoading={isLoading}
               >
-                Apply
+                Aplicar
               </Button>
             </div>
           </form>
