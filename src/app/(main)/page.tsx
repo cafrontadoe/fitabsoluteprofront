@@ -3,6 +3,7 @@ import FeaturedProducts from "@modules/home/components/featured-products"
 import Hero from "@modules/home/components/hero"
 import Navbar from "@modules/home/components/menu"
 import SkeletonHomepageProducts from "@modules/skeletons/components/skeleton-homepage-products"
+import StoreTemplate from "@modules/store/templates"
 import { Metadata } from "next"
 import { Suspense } from "react"
 
@@ -18,9 +19,10 @@ export default async function Home() {
   return (
     <>    
       {/* <Hero /> */}
-      <Suspense fallback={<SkeletonHomepageProducts count={count} />}>
+      {/* <Suspense fallback={<SkeletonHomepageProducts count={count} />}>
         <FeaturedProducts collections={collections} />
-      </Suspense>
+      </Suspense> */}
+      <StoreTemplate />
     </>
   )
 }
