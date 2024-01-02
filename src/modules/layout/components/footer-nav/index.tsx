@@ -109,7 +109,7 @@ const FooterNav = () => {
               >
                 Contato
               </Link>
-              <div className="flex justify-center space-x-2 mb-8">
+              <div className="grid grid-cols-2 gap-4">
                 <a
                   href="https://www.instagram.com/fitabsolutepro/"
                   target="_blank"

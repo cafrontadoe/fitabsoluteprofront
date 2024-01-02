@@ -13,6 +13,7 @@ module.exports = withStoreConfig({
   images: {
     domains: [
       "fitabsolute-server.s3.amazonaws.com",
+      "raw.githubusercontent.com",
     ],
     remotePatterns: [
       {
@@ -34,6 +35,12 @@ module.exports = withStoreConfig({
       {
         protocol: "https",
         hostname: "fitabsolute-server.s3.us-east-1.amazonaws.com",
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: "https",
+        hostname: "raw.githubusercontent.com",
         port: '',
         pathname: '/**',
       },

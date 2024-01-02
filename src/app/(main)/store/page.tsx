@@ -1,5 +1,6 @@
 import { Metadata } from "next"
 import StoreTemplate from "@modules/store/templates"
+import Hero from "@modules/home/components/hero"
 
 export const metadata: Metadata = {
   title: "Store",
@@ -7,5 +8,8 @@ export const metadata: Metadata = {
 }
 
 export default function StorePage() {
-  return <StoreTemplate />
+  return <>
+  {/* <Hero /> */}
+  <StoreTemplate />
+  </>
 }

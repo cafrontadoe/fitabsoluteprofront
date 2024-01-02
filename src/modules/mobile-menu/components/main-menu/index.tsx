@@ -7,6 +7,7 @@ import { useCollections, useMeCustomer } from "medusa-react"
 import Link from "next/link"
 import ReactCountryFlag from "react-country-flag"
 import { Heading } from "@medusajs/ui"
+import Image from "next/image"
 
 const MainMenu = () => {
   const { collections } = useCollections()
@@ -36,9 +37,17 @@ const MainMenu = () => {
           </button>
         </div>
 
-        <Heading className="txt-compact-xlarge-plus text-ui-fg-subtle uppercase color-orange-fit">
-          Fit Absolute Pro
-        </Heading>
+        <div className="txt-compact-xlarge-plus text-ui-fg-subtle uppercase color-orange-fit">
+        <Image
+              src="https://raw.githubusercontent.com/cafrontadoe/fitabsolutefotos/master/branding/logo.png"
+              className=""
+              alt={`fit absolute pro, proteina, creatina, aminoacidos `}
+              layout="responsive"
+              width={10}
+              height={10}
+              sizes="(max-width: 576px) 3rem, (max-width: 768px) 10rem, (max-width: 992px) 12rem, 3rem"
+            />
+        </div>
 
         <div className="flex-1 basis-0 flex justify-end">
           <button onClick={close}>
@@ -132,7 +141,7 @@ const MainMenu = () => {
               </div>
             )} */}
             <div className="flex flex-col gap-y-4">
-              <span className="text-gray-700 uppercase">Delivery</span>
+              <span className="text-gray-700 uppercase">Entrega</span>
               <button
                 className="flex items-center justify-between border-b border-gray-200 py-2"
                 onClick={setScreenCountry}
