@@ -5,13 +5,14 @@ import CheckoutLoader from "../components/checkout-loader"
 import CheckoutForm from "./checkout-form"
 import CheckoutSummary from "./checkout-summary"
 import SubmitSpinner from "../components/submit-spinner"
+import Image from "next/image"
 
 const CheckoutTemplate = () => {
   return (
     <CheckoutProvider>
-      <div className="bg-black relative small:min-h-screen">
+      <div className="relative small:min-h-screen">
         <SubmitSpinner />
-        <div className="h-16">
+        <div className="bg-black h-16">
           <nav className="flex items-center h-full justify-between content-container border-b">
             <Link
               href="/cart"
@@ -19,7 +20,7 @@ const CheckoutTemplate = () => {
             >
               <>
                 <ChevronDown className="rotate-90" size={16} />
-                <span className="mt-px hidden small:block txt-compact-plus text-ui-fg-subtle hover:text-ui-fg-base uppercase">
+                <span className="text-white mt-px hidden small:block txt-compact-plus text-ui-fg-subtle hover:text-white uppercase">
                   Voltar ao carrinho de compras
                 </span>
                 <span className="mt-px block small:hidden">Voltar</span>
@@ -29,7 +30,15 @@ const CheckoutTemplate = () => {
               href="/"
               className="txt-compact-xlarge-plus text-ui-fg-subtle hover:text-ui-fg-base uppercase color-orange-fit"
             >
-              Fit Absolute Pro
+              <Image
+                src="https://raw.githubusercontent.com/cafrontadoe/fitabsolutefotos/master/branding/logo.png"
+                className=""
+                alt={`fit absolute pro, proteina, creatina, aminoacidos `}
+                layout="responsive"
+                width={10}
+                height={10}
+                sizes="(max-width: 576px) 3rem, (max-width: 768px) 10rem, (max-width: 992px) 12rem, 3rem"
+              />
             </Link>
             <div className="flex-1 basis-0" />
           </nav>
