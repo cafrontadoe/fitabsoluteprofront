@@ -45,7 +45,7 @@ const MainMenu = () => {
               layout="responsive"
               width={10}
               height={10}
-              sizes="(max-width: 576px) 3rem, (max-width: 768px) 10rem, (max-width: 992px) 12rem, 3rem"
+              sizes="(max-width: 576px) 3rem, (max-width: 768px) 3rem, (max-width: 992px) 3rem, 4rem"
             />
         </div>
 
