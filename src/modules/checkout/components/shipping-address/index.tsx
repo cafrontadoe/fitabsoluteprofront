@@ -98,7 +98,7 @@ const ShippingAddress = ({
                 required
               />
               <Input
-                label="Estado / Provínciae"
+                label="Estado"
                 {...register("shipping_address.province")}
                 autoComplete="Endereço-linha1"
                 errors={errors}

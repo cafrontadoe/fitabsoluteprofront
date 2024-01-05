@@ -75,7 +75,7 @@ const BillingAddress = () => {
             required
           />
           <Input
-            label="Estado / Província"
+            label="Estado"
             {...register("billing_address.province")}
             autoComplete="address-level1"
             errors={errors}

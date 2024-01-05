@@ -23,7 +23,7 @@ const CheckoutTemplate = () => {
                 <span className="text-white mt-px hidden small:block txt-compact-plus text-ui-fg-subtle hover:text-white uppercase">
                   Voltar ao carrinho de compras
                 </span>
-                <span className="mt-px block small:hidden">Voltar</span>
+                <span className="text-white mt-px block small:hidden">Voltar</span>
               </>
             </Link>
             <Link
@@ -37,7 +37,7 @@ const CheckoutTemplate = () => {
                 layout="responsive"
                 width={10}
                 height={10}
-                sizes="(max-width: 576px) 3rem, (max-width: 768px) 10rem, (max-width: 992px) 12rem, 3rem"
+                sizes="(max-width: 576px) 3rem, (max-width: 768px) 4rem, (max-width: 992px) 4rem, 3rem"
               />
             </Link>
             <div className="flex-1 basis-0" />
