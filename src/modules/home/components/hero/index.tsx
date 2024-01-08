@@ -5,7 +5,7 @@ import Image from "next/image"
 
 const Hero = () => {
   return (
-    <div className="h-[50vh] w-full border-b border-ui-border-base relative bg-ui-bg-subtle">
+    <div className="h-[50vh] w-full border-b border-ui-border-base relative bg-ui-bg-subtle block sm:hidden">
       <div className="grid grid-cols-3 gap-4 inset-0 z-10  items-center text-center small:p-32 ">
         <Image
           src="https://raw.githubusercontent.com/cafrontadoe/fitabsolutefotos/master/jcutler.gif"
